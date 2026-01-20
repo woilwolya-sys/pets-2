@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="api.js" type="module"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль питомца | ЧипТрекер</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-paw"></i>
+            </div>
+            <span class="logo-text">ЧипТрекер</span>
+        </a>
+        <div class="nav-links">
+            <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Личный кабинет</a>
+            <a href="add-pet.html"><i class="fas fa-plus-circle"></i> Добавить питомца</a>
+            <button class="btn-logout" id="logoutBtn">
+                <i class="fas fa-sign-out-alt"></i> Выйти
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Декор в виде следов животных -->
+<div class="animal-decorations">
+    <div class="paw-print">🐾</div>
+    <div class="paw-print">🐾</div>
+    <div class="paw-print">🐾</div>
+    <div class="paw-print">🐾</div>
+</div>
+
+    <!-- Профиль питомца -->
+    <section class="section">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-actions">
+                    <a href="dashboard.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Назад
+                    </a>
+                    <button class="btn btn-primary" id="editProfileBtn">
+                        <i class="fas fa-edit"></i> Редактировать
+                    </button>
+                </div>
+                
+                <div class="profile-title">
+                    <h1 id="petName">Загрузка...</h1>
+                    <p class="profile-subtitle" id="petChipNumber"></p>
+                </div>
+            </div>
+            
+            <div class="profile-grid">
+                <!-- Основная информация -->
+                <div class="profile-card">
+                    <div class="profile-card-header">
+                        <h3><i class="fas fa-info-circle"></i> Основная информация</h3>
+                    </div>
+                    <div class="profile-card-body">
+                        <div class="profile-info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Вид:</span>
+                                <span class="info-value" id="petSpecies">—</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Порода:</span>
+                                <span class="info-value" id="petBreed">—</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Пол:</span>
+                                <span class="info-value" id="petGender">—</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Дата рождения:</span>
+                                <span class="info-value" id="petBirthDate">—</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Окрас:</span>
+                                <span class="info-value" id="petColor">—</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Возраст:</span>
+                                <span class="info-value" id="petAge">—</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Медицинская информация -->
+                <div class="profile-card">
+                    <div class="profile-card-header">
+                        <h3><i class="fas fa-file-medical"></i> Медицинская информация</h3>
+                    </div>
+                    <div class="profile-card-body">
+                        <div class="info-section">
+                            <h4><i class="fas fa-syringe"></i> Прививки</h4>
+                            <div class="info-content" id="petVaccinations">
+                                <p class="no-data">Информация не указана</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4><i class="fas fa-stethoscope"></i> Заболевания и аллергии</h4>
+                            <div class="info-content" id="petDiseases">
+                                <p class="no-data">Информация не указана</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4><i class="fas fa-user-md"></i> Ветеринарная информация</h4>
+                            <div class="info-content" id="petVetInfo">
+                                <p class="no-data">Информация не указана</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Дополнительная информация -->
+                <div class="profile-card">
+                    <div class="profile-card-header">
+                        <h3><i class="fas fa-notes-medical"></i> Дополнительная информация</h3>
+                    </div>
+                    <div class="profile-card-body">
+                        <div class="info-section">
+                            <h4><i class="fas fa-utensils"></i> Диета и питание</h4>
+                            <div class="info-content" id="petDiet">
+                                <p class="no-data">Информация не указана</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4><i class="fas fa-brain"></i> Особенности поведения</h4>
+                            <div class="info-content" id="petBehavior">
+                                <p class="no-data">Информация не указана</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4><i class="fas fa-info-circle"></i> Прочая информация</h4>
+                            <div class="info-content" id="petAdditionalInfo">
+                                <p class="no-data">Информация не указана</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Информация о владельце -->
+                <div class="profile-card">
+                    <div class="profile-card-header">
+                        <h3><i class="fas fa-user"></i> Информация о владельце</h3>
+                    </div>
+                    <div class="profile-card-body">
+                        <div class="owner-info">
+                            <div class="owner-item">
+                                <i class="fas fa-user-circle"></i>
+                                <div>
+                                    <div class="owner-label">Владелец</div>
+                                    <div class="owner-value" id="ownerName">—</div>
+                                </div>
+                            </div>
+                            <div class="owner-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <div class="owner-label">Телефон</div>
+                                    <div class="owner-value" id="ownerPhone">—</div>
+                                </div>
+                            </div>
+                            <div class="owner-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <div class="owner-label">Дата регистрации</div>
+                                    <div class="owner-value" id="registrationDate">—</div>
+                                </div>
+                            </div>
+                            <div class="owner-item">
+                                <i class="fas fa-history"></i>
+                                <div>
+                                    <div class="owner-label">Последнее обновление</div>
+                                    <div class="owner-value" id="lastUpdated">—</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-footer-actions">
+                <button class="btn btn-secondary" id="printProfileBtn">
+                    <i class="fas fa-print"></i> Печать профиля
+                </button>
+                <button class="btn btn-danger" id="deleteProfileBtn">
+                    <i class="fas fa-trash"></i> Удалить питомца
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-paw"></i> ЧипТрекер</h3>
+                    <p>Безопасный учет животных по микрочипам</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone"></i> у нас нет телефона</p>
+                    <p><i class="fas fa-envelope"></i> не пишите нам</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ничего не защищено. мы просто дети</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div id="deleteConfirmModal" class="modal">
+        <!-- Такое же как в edit-pet.html -->
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="pet-profile.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
