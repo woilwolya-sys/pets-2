@@ -166,7 +166,7 @@ p {
 
 /* ===== НАВИГАЦИЯ ===== */
 .navbar {
-    background: rgba(15, 10, 32, 0.95);
+    background: rgba(48, 21, 136, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
@@ -281,7 +281,7 @@ p {
     transform: translateY(-2px);
 }
 
-/* ===== ГЕРОЙ СЕКЦИЯ ===== *
+/* ===== ГЕРОЙ СЕКЦИЯ ===== */
 .hero {
     padding: 180px 0 100px;
     position: relative;
@@ -406,7 +406,7 @@ p {
     font-size: 0.95rem;
 }
 
-/* ===== КНОПКИ ===== *
+/* ===== КНОПКИ ===== */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -473,7 +473,7 @@ p {
     width: 100%;
 }
 
-/* ===== ФОРМЫ ===== *
+/* ===== ФОРМЫ ===== */
 .section {
     padding: 100px 0;
 }
@@ -616,7 +616,7 @@ textarea {
     color: var(--text-muted);
 }
 
-/* ===== ЛИЧНЫЙ КАБИНЕТ ===== *
+/* ===== ЛИЧНЫЙ КАБИНЕТ ===== */
 .dashboard {
     padding: 120px 0 60px;
     min-height: 100vh;
@@ -743,7 +743,7 @@ textarea {
     margin: 0;
 }
 
-/* ===== ПРОЦЕСС РЕГИСТРАЦИИ ===== *
+/* ===== ПРОЦЕСС РЕГИСТРАЦИИ ===== */
 .registration-process {
     background: var(--gradient-dark);
     padding: 40px 0;
@@ -839,7 +839,7 @@ textarea {
     font-weight: 600;
 }
 
-/* ===== КАРТОЧКИ ПИТОМЦЕВ ===== *
+/* ===== КАРТОЧКИ ПИТОМЦЕВ ===== */
 .pets-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -971,7 +971,7 @@ textarea {
     gap: 8px;
 }
 
-/* ===== СЕКЦИИ ФОРМ ===== *
+/* ===== СЕКЦИИ ФОРМ ===== */
 .form-section {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border-color);
@@ -1011,7 +1011,7 @@ textarea {
     justify-content: center;
 }
 
-/* ===== ПУСТЫЕ СОСТОЯНИЯ ===== *
+/* ===== ПУСТЫЕ СОСТОЯНИЯ ===== */
 .empty-state {
     text-align: center;
     padding: 80px 40px;
@@ -1061,7 +1061,7 @@ textarea {
     font-size: 1rem;
 }
 
-/* ===== БЫСТРЫЕ ДЕЙСТВИЯ ===== *
+/* ===== БЫСТРЫЕ ДЕЙСТВИЯ ===== */
 .quick-actions {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1138,7 +1138,7 @@ textarea {
     margin: 0;
 }
 
-/* ===== ДЕЙСТВИЯ ФОРМЫ ===== *
+/* ===== ДЕЙСТВИЯ ФОРМЫ ===== */
 .form-actions {
     display: flex;
     justify-content: space-between;
@@ -1168,7 +1168,7 @@ textarea {
     color: var(--soft-purple);
 }
 
-/* ===== МОДАЛЬНЫЕ ОКНА ===== *
+/* ===== МОДАЛЬНЫЕ ОКНА ===== */
 .modal {
     display: none;
     position: fixed;
@@ -1263,7 +1263,7 @@ textarea {
     flex-wrap: wrap;
 }
 
-/* ===== ПОДВАЛ ===== *
+/* ===== ПОДВАЛ ===== */
 .footer {
     background: var(--darkest);
     padding: 80px 0 30px;
@@ -1328,7 +1328,7 @@ textarea {
     font-size: 0.9rem;
 }
 
-/* ===== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ===== *
+/* ===== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ===== */
 .terms {
     display: flex;
     align-items: center;
@@ -1424,7 +1424,7 @@ textarea {
     padding: 0 20px;
 }
 
-/* ===== АКТИВНОСТИ ===== *
+/* ===== АКТИВНОСТИ ===== */
 .activities-list {
     display: flex;
     flex-direction: column;
@@ -1485,7 +1485,7 @@ textarea {
     display: inline-block;
 }
 
-/* ===== СЕКЦИЯ ОСОБЕННОСТЕЙ ===== *
+/* ===== СЕКЦИЯ ОСОБЕННОСТЕЙ ===== */
 .features {
     padding: 100px 0;
     background: rgba(15, 10, 32, 0.5);
@@ -1574,7 +1574,7 @@ textarea {
     margin: 0;
 }
 
-/* ===== CTA СЕКЦИЯ ===== *
+/* ===== CTA СЕКЦИЯ ===== */
 .cta {
     padding: 120px 0;
     text-align: center;
@@ -1613,7 +1613,7 @@ textarea {
     line-height: 1.8;
 }
 
-/* ===== АДАПТИВНОСТЬ ===== *
+/* ===== АДАПТИВНОСТЬ ===== */
 @media (max-width: 1024px) {
     .hero .container {
         grid-template-columns: 1fr;
@@ -1758,7 +1758,7 @@ textarea {
     }
 }
 
-/* ===== АНИМАЦИИ И ЭФФЕКТЫ ===== *
+/* ===== АНИМАЦИИ И ЭФФЕКТЫ ===== */
 @keyframes shimmer {
     0% { background-position: -1000px 0; }
     100% { background-position: 1000px 0; }
@@ -1773,7 +1773,7 @@ textarea {
     animation: shimmer 2s infinite;
 }
 
-/* Плавное появление элементов *
+/* Плавное появление элементов */
 .fade-in {
     animation: fadeInUp 0.6s ease forwards;
     opacity: 0;
@@ -1790,7 +1790,7 @@ textarea {
     }
 }
 
-/* Эффект неонового свечения *
+/* Эффект неонового свечения */
 .neon-glow {
     text-shadow: 
         0 0 5px var(--lavender),
@@ -1798,7 +1798,7 @@ textarea {
         0 0 20px var(--lavender);
 }
 
-/* Анимация пульсации для важных элементов *
+/* Анимация пульсации для важных элементов */
 @keyframes pulse-glow {
     0%, 100% {
         box-shadow: 0 0 5px rgba(157, 78, 221, 0.5);
@@ -1812,7 +1812,7 @@ textarea {
     animation: pulse-glow 2s infinite;
 }
 
-/* Плавный скроллбар *
+/* Плавный скроллбар */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -1831,7 +1831,7 @@ textarea {
 }
 /* Добавьте эти стили в конец файла style.css */
 
-/* ===== БЭЙДЖИ ===== *
+/* ===== БЭЙДЖИ ===== */
 .animal-badges {
     display: flex;
     gap: 8px;
@@ -1867,7 +1867,7 @@ textarea {
     border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
-/* ===== ИНФОРМАЦИЯ О ПИТОМЦЕ ===== *
+/* ===== ИНФОРМАЦИЯ О ПИТОМЦЕ ===== */
 .animal-header-info {
     flex: 1;
 }
@@ -1893,7 +1893,7 @@ textarea {
     font-size: 1rem;
 }
 
-/* ===== КНОПКИ ДЕЙСТВИЙ ===== *
+/* ===== КНОПКИ ДЕЙСТВИЙ ===== */
 .footer-actions {
     display: flex;
     gap: 10px;
@@ -1939,7 +1939,7 @@ textarea {
     color: var(--error);
 }
 
-/* ===== КНОПКА УДАЛЕНИЯ В ФОРМЕ ===== *
+/* ===== КНОПКА УДАЛЕНИЯ В ФОРМЕ ===== */
 .btn-danger {
     background: linear-gradient(135deg, #EF4444, #DC2626);
     color: white;
@@ -1952,7 +1952,6 @@ textarea {
     box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
 }
 
-/* ===== МОДАЛЬНОЕ ОКНО ОШИБКИ ===== *
 .modal-icon.danger {
     color: var(--error);
     animation: shake 0.5s ease;
@@ -1964,7 +1963,7 @@ textarea {
     75% { transform: translateX(10px); }
 }
 
-/* ===== УВЕДОМЛЕНИЯ ===== *
+/* ===== УВЕДОМЛЕНИЯ ===== */
 .notification {
     position: fixed;
     top: 90px;
@@ -2035,7 +2034,7 @@ textarea {
     }
 }
 
-/* ===== СТАТУС РЕДАКТИРОВАНИЯ ===== *
+/* ===== СТАТУС РЕДАКТИРОВАНИЯ ===== */
 .edit-status {
     display: flex;
     align-items: center;
@@ -2057,7 +2056,7 @@ textarea {
     font-weight: 500;
 }
 
-/* ===== ПОЛЕ ТОЛЬКО ДЛЯ ЧТЕНИЯ ===== *
+/* ===== ПОЛЕ ТОЛЬКО ДЛЯ ЧТЕНИЯ ===== */
 input[readonly] {
     background: rgba(255, 255, 255, 0.03);
     border-color: rgba(157, 78, 221, 0.1);
@@ -2070,7 +2069,7 @@ input[readonly]:focus {
     box-shadow: none;
 }
 
-/* ===== ДЕЙСТВИЯ В ФОРМЕ РЕДАКТИРОВАНИЯ ===== *
+/* ===== ДЕЙСТВИЯ В ФОРМЕ РЕДАКТИРОВАНИЯ ===== */
 .edit-form-actions {
     display: flex;
     justify-content: space-between;
@@ -2085,7 +2084,7 @@ input[readonly]:focus {
     gap: 15px;
 }
 
-/* ===== КОНФИРМАЦИЯ УДАЛЕНИЯ ===== *
+/* ===== КОНФИРМАЦИЯ УДАЛЕНИЯ ===== */
 .delete-confirmation {
     background: rgba(239, 68, 68, 0.1);
     border: 1px solid rgba(239, 68, 68, 0.3);
@@ -2113,7 +2112,7 @@ input[readonly]:focus {
     justify-content: center;
 }
 
-/* ===== ОТВЕТСТВЕННОСТЬ ПРИ УДАЛЕНИИ ===== *
+/* ===== ОТВЕТСТВЕННОСТЬ ПРИ УДАЛЕНИИ ===== */
 .delete-warning {
     display: flex;
     align-items: flex-start;
@@ -2148,7 +2147,7 @@ input[readonly]:focus {
     margin-bottom: 5px;
 }
 
-/* ===== АДАПТИВНОСТЬ ДЛЯ КНОПОК ДЕЙСТВИЙ ===== *
+/* ===== АДАПТИВНОСТЬ ДЛЯ КНОПОК ДЕЙСТВИЙ ===== */
 @media (max-width: 768px) {
     .footer-actions {
         flex-direction: column;
@@ -2191,7 +2190,7 @@ input[readonly]:focus {
         max-width: calc(100vw - 40px);
     }
 }
-/* ===== СТРАНИЦА ПРОФИЛЯ ===== *
+/* ===== СТРАНИЦА ПРОФИЛЯ ===== */
 .profile-header {
     margin-bottom: 40px;
 }
@@ -2354,7 +2353,7 @@ input[readonly]:focus {
     border-top: 1px solid var(--border-color);
 }
 
-/* ===== АДАПТИВНОСТЬ ПРОФИЛЯ ===== *
+/* ===== АДАПТИВНОСТЬ ПРОФИЛЯ ===== */
 @media (max-width: 768px) {
     .profile-grid {
         grid-template-columns: 1fr;
@@ -2388,7 +2387,7 @@ input[readonly]:focus {
     }
 }
 
-/* ===== СТИЛИ ДЛЯ УСЛОВИЙ ИСПОЛЬЗОВАНИЯ ===== *
+/* ===== СТИЛИ ДЛЯ УСЛОВИЙ ИСПОЛЬЗОВАНИЯ ===== */
 .terms-header, .privacy-header {
     text-align: center;
     margin-bottom: 50px;
@@ -2465,7 +2464,7 @@ input[readonly]:focus {
     font-size: 1.1rem;
 }
 
-/* Списки *
+/* Списки */
 .terms-list, .privacy-list {
     margin: 15px 0 20px 25px;
     color: var(--text-secondary);
@@ -2493,7 +2492,7 @@ input[readonly]:focus {
     display: none;
 }
 
-/* Уведомления *
+/* Уведомления */
 .terms-note, .privacy-note {
     background: rgba(157, 78, 221, 0.1);
     border: 1px solid rgba(157, 78, 221, 0.3);
@@ -2537,7 +2536,7 @@ input[readonly]:focus {
     margin-top: 2px;
 }
 
-/* Сетки *
+/* Сетки */
 .requirements-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -2618,7 +2617,7 @@ input[readonly]:focus {
     margin-top: 5px;
 }
 
-/* Согласие *
+/* Согласие */
 .terms-agreement, .privacy-acceptance {
     background: linear-gradient(135deg, rgba(45, 27, 105, 0.8), rgba(26, 16, 51, 0.9));
     border: 1px solid var(--border-color);
@@ -2658,7 +2657,7 @@ input[readonly]:focus {
     font-size: 1.1rem;
 }
 
-/* Кнопки действий *
+/* Кнопки действий */
 .terms-actions, .privacy-actions {
     display: flex;
     justify-content: center;
@@ -2669,7 +2668,7 @@ input[readonly]:focus {
     flex-wrap: wrap;
 }
 
-/* ===== СТИЛИ ДЛЯ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ ===== *
+/* ===== СТИЛИ ДЛЯ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ ===== */
 .data-types {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -2996,7 +2995,7 @@ input[readonly]:focus {
     margin: 20px 0;
 }
 
-/* ===== АДАПТИВНОСТЬ ===== *
+/* ===== АДАПТИВНОСТЬ ===== */
 @media (max-width: 768px) {
     .terms-section, .privacy-section {
         padding: 25px;
@@ -3048,9 +3047,9 @@ input[readonly]:focus {
         text-align: center;
     }
 }
-/* ===== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ API ИНТЕГРАЦИИ ===== *
+/* ===== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ API ИНТЕГРАЦИИ ===== */
 
-/* Индикатор загрузки *
+/* Индикатор загрузки */
 .loading-spinner {
     display: inline-block;
     width: 20px;
@@ -3065,7 +3064,7 @@ input[readonly]:focus {
     to { transform: rotate(360deg); }
 }
 
-/* Состояние ошибки *
+/* Состояние ошибки */
 .empty-state.error {
     border: 1px solid var(--error);
     background: rgba(244, 67, 54, 0.1);
@@ -3075,7 +3074,7 @@ input[readonly]:focus {
     color: var(--error);
 }
 
-/* Состояние загрузки *
+/* Состояние загрузки */
 .loading-state {
     text-align: center;
     padding: 60px;
@@ -3094,7 +3093,7 @@ input[readonly]:focus {
     50% { opacity: 0.5; }
 }
 
-/* Уведомления *
+/* Уведомления */
 .notification {
     position: fixed;
     top: 90px;
@@ -3151,7 +3150,7 @@ input[readonly]:focus {
     color: var(--info);
 }
 
-/* Кнопки в состоянии загрузки *
+/* Кнопки в состоянии загрузки */
 .btn:disabled {
     opacity: 0.6;
     cursor: not-allowed;
@@ -3161,7 +3160,7 @@ input[readonly]:focus {
     margin-right: 8px;
 }
 
-/* Адаптивность для уведомлений *
+/* Адаптивность для уведомлений */
 @media (max-width: 768px) {
     .notification {
         left: 20px;
@@ -3174,7 +3173,7 @@ input[readonly]:focus {
         max-width: 100%;
     }
 }
-/* ===== ИЛЛЮСТРАЦИЯ С ЖИВОТНЫМИ И МИКРОЧИПАМИ ===== *
+/* ===== ИЛЛЮСТРАЦИЯ С ЖИВОТНЫМИ И МИКРОЧИПАМИ ===== */
 .animal-chip-illustration {
     position: relative;
     width: 500px;
@@ -3322,7 +3321,7 @@ input[readonly]:focus {
     100% { transform: rotate(360deg) scale(0.5); opacity: 0.5; }
 }
 
-/* Адаптивность для иллюстрации *
+/* Адаптивность для иллюстрации */
 @media (max-width: 1024px) {
     .animal-chip-illustration {
         width: 400px;
@@ -3375,7 +3374,7 @@ input[readonly]:focus {
         width: 250px;
     }
 }
-/* Статистика на главной *
+/* Статистика на главной */
 .hero-stats {
     display: flex;
     justify-content: center;
@@ -3427,7 +3426,7 @@ input[readonly]:focus {
         font-size: 1.5rem;
     }
 }
-/* ===== ПОДРОБНАЯ СЕКЦИЯ ОСОБЕННОСТЕЙ ===== *
+/* ===== ПОДРОБНАЯ СЕКЦИЯ ОСОБЕННОСТЕЙ ===== */
 .features-detailed {
     padding: 100px 0;
     background: linear-gradient(135deg, rgba(15, 10, 32, 0.8), rgba(26, 16, 51, 0.9));
@@ -3554,7 +3553,7 @@ input[readonly]:focus {
     font-size: 0.9rem;
 }
 
-/* Дополнительная информация *
+/* Дополнительная информация */
 .additional-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -3655,7 +3654,7 @@ input[readonly]:focus {
     font-weight: 500;
 }
 
-/* CTA секция *
+/* CTA секция */
 .features-cta {
     text-align: center;
     padding: 50px;
@@ -3699,7 +3698,7 @@ input[readonly]:focus {
     flex-wrap: wrap;
 }
 
-/* FAQ секция (дополнительно) *
+/* FAQ секция (дополнительно) */
 .faq-section {
     padding: 80px 0;
     background: rgba(15, 10, 32, 0.5);
@@ -3772,7 +3771,7 @@ input[readonly]:focus {
     line-height: 1.6;
 }
 
-/* Анимация при скролле *
+/* Анимация при скролле */
 .feature-card-detailed, .info-card, .faq-item {
     opacity: 0;
     transform: translateY(30px);
@@ -3784,7 +3783,7 @@ input[readonly]:focus {
     transform: translateY(0);
 }
 
-/* Адаптивность *
+/* Адаптивность */
 @media (max-width: 1024px) {
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
